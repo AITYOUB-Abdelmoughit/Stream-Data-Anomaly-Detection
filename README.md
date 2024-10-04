@@ -40,6 +40,7 @@ Stream-Data-Anomaly-Detection
 ```
 
 ## Installation
+You can access to the web application from the following [link](https://stream-data-anomaly-detection.streamlit.app/). Or locally by following the instructions below.
 
 To install and run the project locally:
 
