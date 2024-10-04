@@ -19,7 +19,7 @@ You can adjust the parameters for data simulation and anomaly detection, and vie
 """)
 
 st.sidebar.header("Settings")
-length = st.sidebar.slider("Stream Length", min_value=100, max_value=10000, value=1000, step=100)
+length = st.sidebar.slider("Stream Length", min_value=100, max_value=1000, value=750, step=100)
 noise = st.sidebar.slider("Noise Level", min_value=2, max_value=10, value=3, step=1)
 algorithm = st.sidebar.selectbox("Anomaly Detection Algorithm", options=["Z-Score", "Isolation Forest"])
 contamination = st.sidebar.slider("Contamination Rate (for Isolation Forest)", min_value=0.01, max_value=0.1, value=0.01, step=0.01)
