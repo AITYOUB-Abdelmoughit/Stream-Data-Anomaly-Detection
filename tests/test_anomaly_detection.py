@@ -7,14 +7,13 @@ class TestAnomalyDetection(unittest.TestCase):
     def setUp(self):
         """Initialize the AnomalyDetector with sample data."""
         self.detector = AnomalyDetector(contamination=0.01, n_estimators=100)
-        # Generate normal data and one outlier
         self.normal_data = np.array([0.5, 0.1, -0.2, 0.7, -0.5, 1.0, 0.3, -0.1, 0.6, 0.2])
-        self.anomaly_data = [100]  # An extreme value
+        self.anomaly_data = [100]
 
     def test_isolation_forest_detection(self):
         """Test Isolation Forest detects anomalies correctly."""
         all_data = list(self.normal_data) + self.anomaly_data
-        self.detector.fit(self.normal_data)  # Fit on normal data
+        self.detector.fit(self.normal_data)
 
         # Test on normal data - should not detect anomaly
         is_anomaly = self.detector.detect_isolation_forest(np.mean(self.normal_data))
@@ -27,13 +26,12 @@ class TestAnomalyDetection(unittest.TestCase):
     def test_z_score_detection(self):
         """Test Z-Score detects anomalies correctly."""
         all_data = list(self.normal_data) + self.anomaly_data
-        self.detector.fit(self.normal_data)  # Fit on normal data
+        self.detector.fit(self.normal_data)
 
-        # Test on normal data - should not detect anomaly
+        
         is_anomaly = self.detector.detect_z_score(np.mean(self.normal_data))
         self.assertFalse(is_anomaly)
 
-        # Test on anomaly data - should detect anomaly
         for value in self.anomaly_data:
             is_anomaly = self.detector.detect_z_score(value)
             self.assertTrue(is_anomaly)
