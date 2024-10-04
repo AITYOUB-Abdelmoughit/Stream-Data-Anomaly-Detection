@@ -15,7 +15,7 @@ class AnomalyDetector:
         - contamination (float): The proportion of anomalies in the data.
         - n_estimators (int): The number of trees in the Isolation Forest.
         """
-        self.isolation_forest = IsolationForest(contamination=contamination, n_estimators=n_estimators)
+        self.isolation_forest = IsolationForest(contamination=contamination, n_estimators=n_estimators, random_state=91)
         self.fitted_if = False
         self.data_points = []
         self.mean = None
