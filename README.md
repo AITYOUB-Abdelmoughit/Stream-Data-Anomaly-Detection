@@ -52,7 +52,7 @@ To install and run the project locally:
 2. Set up a virtual environment (optional but recommended):
    ```bash
    python -m venv env  # Or Python3 in Unix-like OS
-   `env\\Scripts\\activate`   # On Unix-like OS use "source env/bin/activate"
+   `env\Scripts\activate`   # On Unix-like OS use "source env/bin/activate"
    ```
 
 3. Install required dependencies:
