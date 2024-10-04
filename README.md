@@ -34,9 +34,9 @@ Stream-Data-Anomaly-Detection
 │   ├── test_anomaly_detection.py # Unit tests for anomaly detection
 │   ├── test_stream_simulation.py # Unit tests for stream simulation
 ├── web_app.py                    # Streamlit app for real-time data stream and anomaly visualization
-├── LICENSE                       # MIT License
+├── LICENSE                       
 ├── README.md                     
-├── requirements.txt              # Project dependencies
+├── requirements.txt              
 ```
 
 ## Installation
@@ -52,7 +52,7 @@ To install and run the project locally:
 2. Set up a virtual environment (optional but recommended):
    ```bash
    python -m venv env  # Or Python3 in Unix-like OS
-   `env\\Scripts\\activate`   # On Unix-like OS use "source env/bin/activate"
+   `env\Scripts\activate`   # On Unix-like OS use "source env/bin/activate"
    ```
 
 3. Install required dependencies:
