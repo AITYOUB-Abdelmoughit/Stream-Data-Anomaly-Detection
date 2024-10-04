@@ -10,7 +10,7 @@ The system offers real-time anomaly detection using:
 - **Z-Score Method**: A statistical approach to detecting outliers based on standard deviations.
 - **Isolation Forest Algorithm**: A machine learning model for detecting anomalies, specifically suited for high-dimensional data and unsupervised learning.
 
-The entire project is implemented in Python with minimal external dependencies, making it lightweight, easy to deploy, and adaptable for various use cases.
+The entire project is implemented in Python (version 3.10.9) with minimal external dependencies, making it lightweight, easy to deploy, and adaptable for various use cases.
 
 ## Features
 
