@@ -53,7 +53,7 @@ for data_point in stream:
         label = "Anomalies (Isolation Forest)"
     
     
-    if len(data_list) == 250:
+    if len(data_list) == 300:
         data_list.pop(0)  # Remove the oldest value
     data_list.append({"Value": data_point, "Anomaly": is_anomaly})
     
